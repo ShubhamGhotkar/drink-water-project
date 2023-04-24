@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+// VARIABLES
+
+// FONT SIZE
+$default: 1.6rem;
+$medium: 2rem;
+
+// BACKGROUND
+$back-col: #3494e4;
+
+// COLOR
+$col-white: #fff;
+
+// mixin
+
+@mixin placeItmCenter {
+  font-size: medium;
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: $back-col;
+}
+.container__main {
+  font-size: $default;
+  width: 60rem;
+  padding: 3rem;
+
+  display: grid;
+  place-items: center;
+  gap: 4rem;
+
+  &--goals,
+  &--para {
+    @include placeItmCenter;
+    color: $col-white;
+  }
+
+  &--big-jar {
+    height: 30rem;
+    width: 15rem;
+    background-color: #fff;
+    border-radius: 0 0 3rem 3rem;
+    border: 3px solid #0d0dba;
+  }
+
+  &--jars {
+    width: 80%;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    div {
+      height: 10rem;
+      width: 60%;
+
+      display: grid;
+      place-items: center;
+      gap: 2rem;
+      border-radius: 0 0 2rem 2rem;
+      background-color: $col-white;
+      border: 3px solid #0d0dba;
+      text-overflow: clip;
+      text-align: center;
+      font-size: $default;
+    }
+  }
+}
