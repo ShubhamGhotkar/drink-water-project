@@ -17,9 +17,13 @@ $medium: 2rem;
 
 // BACKGROUND
 $back-col: #3494e4;
+$back-col-light: skyblue;
 
 // COLOR
 $col-white: #fff;
+
+// BORDER
+$border-col-blue:#0d0dba;
 
 // mixin
 
@@ -54,6 +58,8 @@ body {
   @include grid-center;
   gap: 4rem;
 
+  transition: 0.3s ease;
+
   &--goals,
   &--para {
     @include place-text-cen;
@@ -65,7 +71,7 @@ body {
     width: 15rem;
     background-color: #fff;
     border-radius: 0 0 3rem 3rem;
-    border: 4px solid #0d0dba;
+    border: 4px solid $border-col-blue;
 
     position: relative;
     overflow: hidden;
@@ -76,6 +82,7 @@ body {
       background-color: $col-white;
 
       @include flex-center;
+      transition: 0.5s ease;
 
       position: absolute;
       top: 0;
@@ -87,6 +94,8 @@ body {
       width: 100%;
       display: none;
       @include grid-center;
+
+      transition: 0.5s ease;
 
       position: absolute;
       bottom: 0;
@@ -122,7 +131,7 @@ body {
 }
 
 .fill {
-  background-color: #45a5f4;
+  background-color: $back-col-light !important;
 }
 
 .empty {
