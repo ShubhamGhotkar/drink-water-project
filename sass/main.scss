@@ -106,15 +106,17 @@ body {
   }
 
   &--jars {
-    width: 80%;
+    width: 60%;
 
-    @include grid-center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    //  FLEXBOX
+    display: flex;
+    flex: 0 0;
+    flex-wrap: wrap;
+    gap: 2rem;
 
-    div {
+    .jar {
       height: 10rem;
-      width: 60%;
+      width: 20%;
       cursor: pointer;
 
       @include grid-center;

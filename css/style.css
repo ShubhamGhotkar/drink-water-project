@@ -59,14 +59,14 @@ body {
       left: 0;
       z-index: 5; }
   .container__main--jars {
-    width: 80%;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem; }
-    .container__main--jars div {
+    width: 60%;
+    display: flex;
+    flex: 0 0;
+    flex-wrap: wrap;
+    gap: 2rem; }
+    .container__main--jars .jar {
       height: 10rem;
-      width: 60%;
+      width: 20%;
       cursor: pointer;
       display: grid;
       place-items: center;
