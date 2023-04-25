@@ -6,9 +6,6 @@ const addWater = document.querySelector(".empty-water");
 const remVolumn = document.querySelector(".span-volumn");
 const addVolumn = document.querySelector(".fill-span");
 
-// Array
-let set = new Set();
-
 // VARIABLES
 let toggle = false;
 let remWaterHeight;
