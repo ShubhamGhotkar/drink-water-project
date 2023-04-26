@@ -12,7 +12,7 @@ let waterRemain;
 let WaterAdded;
 
 // LOGIC
-jars.forEach((jar, ind) => {
+jars.forEach((jar) => {
   jar.addEventListener("click", function () {
     //for index
     let index = jar.classList.contains("fill") ? 0 : 1;
